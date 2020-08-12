@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Navigation Menu</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class=container>
+        <div class="menu-bar">
+            <nav id="navigation">
+                <a href="#" v-on:click.stop.prevent="updateOption">HOME</a>
+                <a href="#" v-on:click.stop.prevent="updateOption">PROJECTS</a>
+                <a href="#" v-on:click.stop.prevent="updateOption">SERVICES</a>
+                <a href="#" v-on:click.stop.prevent="updateOption">CONTACT</a>
+            </nav>
+            <p v-show="menu">You choose <b>{{ option }}</b></p>
+            <p v-show="!menu">You don't pick anything</p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
