@@ -1,0 +1,64 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin:0;
+    padding:0;
+}
+body {
+    text-align:center;
+}
+a:focus {
+    background-color: #e35885;
+    outline-style: none;
+}
+/* ========================= 
+            DOCUMENT 
+========================= */
+.container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0 auto;
+}
+
+/* ========================= 
+            MENU 
+========================= */
+nav {
+    background-color: #389dc1;
+    margin: 50px auto 50px;
+    display: inline-block;
+}
+
+nav a {
+    text-decoration: none;
+    line-height: 1;
+    display: inline-block;
+    padding: 18px 35px;
+    background-color:transparent;
+    font-size: 22px;
+}
+
+nav:first-child {
+    border-radius: 4px 0px 0px 4px;
+}
+nav:last-child {
+    border-radius: 0px 4px 4px 0px;
+}
+/* ====================
+        BAWAH
+====================== */
+p {
+    color: rgb(80, 77, 77);
+    font-size: 22px;
+}
+p b {
+    background-color: grey;
+    color: white;
+    display: inline-block;
+    line-height: 24px;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
